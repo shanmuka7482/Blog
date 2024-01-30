@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The secret Book Club</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <%- include("partials/header.ejs") %>
+    <div class="blogCreate">
+      <h2>Create Blog:</h2>
+      <form action="/submit" method="post">
+        <label for="Title">Title:</label><br />
+        <input type="text" id="Title" name="Title" /><br /><br />
+        <label for="Content">Content:</label><br />
+        <textarea id="comment" name="Content" rows="4" cols="50"></textarea
+        ><br /><br />
+        <button type="submit" class="Submit">Submit</button>
+      </form>
+    </div>
+
+    <%- include("partials/footer.ejs") %>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+body {
+  background-color: #e7dfd8;
+}
+.logo {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+h1,
+p,
+h2,
+button,
+label {
+  font-family: "Antic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #1e3f48;
+}
+.logo .name {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  color: #1e3f48;
+}
+.logo > img {
+  height: 50px;
+  width: 67px;
+  margin-left: 10px;
+}
+.logo .Home {
+  margin-left: auto;
+}
+.logo .Home > button {
+  font-size: 20px;
+  color: #1e3f48;
+  border: 0px;
+  background-color: #e7dfd8;
+  padding-top: 14px;
+}
+.logo .Create {
+  align-self: center;
+}
+.logo .Create > button {
+  font-size: 20px;
+  border-radius: 15px;
+  color: #1e3f48;
+  border: 1.5px solid #767fa7;
+  background-color: #e7dfd8;
+  padding-bottom: 3px;
+}
+.logo .Create > button:hover {
+  color: #e79a26;
+  border: 1px solid #767fa7;
+}
+.logo .Home > button:hover {
+  color: #e79a26;
+}
+footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 60px;
+  width: 100%;
+}
+.body .sideImg > img {
+  height: 530.7px;
+  width: 530.7px;
+}
+.body {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr;
+  margin-right: 50px;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .body {
+    grid-template-columns: 1fr;
+  }
+}
+.body > .blog {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+.body h2 {
+  font-size: medium;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.body p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.blogCreate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+.blogCreate #Title,
+textarea {
+  background-color: #e7dfd8;
+  border: 1px solid #767fa7;
+  border-radius: 3px;
+  font-family: "Antic", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #1e3f48;
+}
+.blogCreate .Submit {
+  font-size: 20px;
+  border-radius: 10px;
+  color: #1e3f48;
+  border: 1.3px solid #767fa7;
+  background-color: #e7dfd8;
+  padding-bottom: 2px;
+}
+.blogCreate textarea:hover,
+#Title:hover {
+  border: 1.3px solid #6778c1;
+}
+.blogCreate .Submit:hover {
+  color: #e79a26;
+  border: 1px solid #767fa7;
+}
+.body > .blog h2 {
+  font-weight: 650;
+  font-size: large;
+}

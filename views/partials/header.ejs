@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The secret Book Club</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic&family=Libre+Baskerville&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div class="logo Img">
+          <img src="logo.png" alt="book" />
+        </div>
+        <div>
+          <h1 class="name">The Secret Book Club</h1>
+        </div>
+        <div class="Home">
+          <button type="button" name="Home" onclick="redirectTo('/')">
+            Home
+          </button>
+        </div>
+        <div class="Create">
+          <button type="button" name="Create" onclick="redirectTo('/create')">
+            Create Blog
+          </button>
+        </div>
+      </div>
+      <script>
+        function redirectTo(url) {
+          window.location.href = url;
+        }
+      </script>
+    </header>
+  </body>
+</html>
